@@ -102,7 +102,8 @@ public class MultipleSelectorViewController<T:Hashable> : FormViewController, Ty
                                 }
                             }
         }
-        form.first?.header = HeaderFooterView<UITableViewHeaderFooterView>(title: row.title)
+        self.navigationItem.title = row.title
+//        form.first?.header = HeaderFooterView<UITableViewHeaderFooterView>(title: row.title)
     }
     
 }
