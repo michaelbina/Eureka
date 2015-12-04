@@ -57,7 +57,8 @@ public class SelectorViewController<T:Equatable> : FormViewController, TypedRowC
                                 self?.completionCallback?(self!)
                             }
         }
-        form.first?.header = HeaderFooterView<UITableViewHeaderFooterView>(title: row.title)
+        self.navigationItem.title = row.title
+//        form.first?.header = HeaderFooterView<UITableViewHeaderFooterView>(title: row.title)
     }
 }
 
